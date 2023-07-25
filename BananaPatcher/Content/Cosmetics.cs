@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -9,6 +10,7 @@ namespace BananaPatcher.Content
     internal class Cosmetics
     {
         public static List<(string, string, bool, string)> __cosmeticsHex = new List<(string, string, bool, string)>();
+        public static List<(string, string, bool, string)> __emotesHex = new List<(string, string, bool, string)>();
 
         public static async Task<int> addAllCosmeticHex()
         {
@@ -101,6 +103,24 @@ namespace BananaPatcher.Content
 
             // Swap with Sea Wolf Jonesy
             __cosmeticsHex.Add(("DebugCID (Only works on v1.0.0)", "2F 47 61 6D 65 2F 41 74 68 65 6E 61 2F 49 74 65 6D 73 2F 43 6F 73 6D 65 74 69 63 73 2F 43 68 61 72 61 63 74 65 72 73 2F 44 65 62 75 67 43 49 44 2E 44 65 62 75 67 43 49 44 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00", true, ""));
+            return 0;
+        }
+
+        public static async Task<int> GetEmotesHex()
+        {
+            __emotesHex.Add(("Conga", "2F 47 61 6D 65 2F 41 74 68 65 6E 61 2F 49 74 65 6D 73 2F 43 6F 73 6D 65 74 69 63 73 2F 44 61 6E 63 65 73 2F 45 49 44 5F 43 6F 6E 67 61 2E 45 49 44 5F 43 6F 6E 67 61 00 00 00 00 00 00 00 00 00 00", false, "Dance Moves"));
+
+            __emotesHex.Add(("Fresh", "2F 47 61 6D 65 2F 41 74 68 65 6E 61 2F 49 74 65 6D 73 2F 43 6F 73 6D 65 74 69 63 73 2F 44 61 6E 63 65 73 2F 45 49 44 5F 46 72 65 73 68 2E 45 49 44 5F 46 72 65 73 68 00 00 00 00 00 00 00 00 00 00", false, "Dance Moves"));
+
+            __emotesHex.Add(("Get Griddy", "2F 47 61 6D 65 2F 41 74 68 65 6E 61 2F 49 74 65 6D 73 2F 43 6F 73 6D 65 74 69 63 73 2F 44 61 6E 63 65 73 2F 45 49 44 5F 47 72 69 64 64 6C 65 73 2E 45 49 44 5F 47 72 69 64 64 6C 65 73 00 00 00 00", false, "Dance Moves"));
+
+            __emotesHex.Add(("Hula", "2F 47 61 6D 65 2F 41 74 68 65 6E 61 2F 49 74 65 6D 73 2F 43 6F 73 6D 65 74 69 63 73 2F 44 61 6E 63 65 73 2F 45 49 44 5F 48 75 6C 61 2E 45 49 44 5F 48 75 6C 61 00 00 00 00 00 00 00 00 00 00 00 00", false, "Dance Moves"));
+
+            __emotesHex.Add(("Office Chariot", "2F 47 61 6D 65 2F 41 74 68 65 6E 61 2F 49 74 65 6D 73 2F 43 6F 73 6D 65 74 69 63 73 2F 44 61 6E 63 65 73 2F 45 49 44 5F 4F 66 66 69 63 65 2E 45 49 44 5F 4F 66 66 69 63 65 00 00 00 00 00 00 00 00", false, "Dance Moves"));
+
+            __emotesHex.Add(("Tidy", "2F 47 61 6D 65 2F 41 74 68 65 6E 61 2F 49 74 65 6D 73 2F 43 6F 73 6D 65 74 69 63 73 2F 44 61 6E 63 65 73 2F 45 49 44 5F 54 69 64 79 2E 45 49 44 5F 54 69 64 79 00 00 00 00 00 00 00 00 00 00 00 00", false, "Dance Moves"));
+
+            //__emotesHex.Add(("Stride", "", false, "Dance Moves"));
             return 0;
         }
     }

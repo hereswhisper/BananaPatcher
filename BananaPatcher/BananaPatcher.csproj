@@ -45,6 +45,7 @@
   <ItemGroup>
     <Compile Include="Content\Cosmetics.cs" />
     <Compile Include="Helpers\Conversion.cs" />
+    <Compile Include="Helpers\ConversionEmote.cs" />
     <Compile Include="Helpers\HexEditor.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
