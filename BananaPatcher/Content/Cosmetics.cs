@@ -10,7 +10,7 @@ namespace BananaPatcher.Content
     {
         public static List<(string, string, bool, string)> __cosmeticsHex = new List<(string, string, bool, string)>();
 
-        public static void addAllCosmeticHex()
+        public static async Task<int> addAllCosmeticHex()
         {
             // Swap with Calamity
             __cosmeticsHex.Add(("Sled Ready Guff", "2F 47 61 6D 65 2F 41 74 68 65 6E 61 2F 49 74 65 6D 73 2F 43 6F 73 6D 65 74 69 63 73 2F 43 68 61 72 61 63 74 65 72 73 2F 43 68 61 72 61 63 74 65 72 5F 43 6F 6D 65 74 44 65 65 72 2E 43 68 61 72 61 63 74 65 72 5F 43 6F 6D 65 74 44 65 65 72 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00", false, "Calamity"));
@@ -62,6 +62,10 @@ namespace BananaPatcher.Content
 
             //
             //__cosmeticsHex.Add(("key3", "value3"));
+
+            //Console.WriteLine("[BananaPatcher] Successfully added all cosmetics!");
+            //Console.Clear();
+            return 0;
         }
     }
 }

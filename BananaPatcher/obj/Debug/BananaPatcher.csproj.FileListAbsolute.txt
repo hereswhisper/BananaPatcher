@@ -1,0 +1,8 @@
+C:\Users\Whisper\Desktop\BananaRushPatcher\BananaPatcher\BananaPatcher\bin\Debug\BananaPatcher.exe.config
+C:\Users\Whisper\Desktop\BananaRushPatcher\BananaPatcher\BananaPatcher\bin\Debug\BananaPatcher.exe
+C:\Users\Whisper\Desktop\BananaRushPatcher\BananaPatcher\BananaPatcher\bin\Debug\BananaPatcher.pdb
+C:\Users\Whisper\Desktop\BananaRushPatcher\BananaPatcher\BananaPatcher\obj\Debug\BananaPatcher.csproj.AssemblyReference.cache
+C:\Users\Whisper\Desktop\BananaRushPatcher\BananaPatcher\BananaPatcher\obj\Debug\BananaPatcher.csproj.SuggestedBindingRedirects.cache
+C:\Users\Whisper\Desktop\BananaRushPatcher\BananaPatcher\BananaPatcher\obj\Debug\BananaPatcher.csproj.CoreCompileInputs.cache
+C:\Users\Whisper\Desktop\BananaRushPatcher\BananaPatcher\BananaPatcher\obj\Debug\BananaPatcher.exe
+C:\Users\Whisper\Desktop\BananaRushPatcher\BananaPatcher\BananaPatcher\obj\Debug\BananaPatcher.pdb
