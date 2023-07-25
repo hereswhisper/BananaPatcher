@@ -11,6 +11,7 @@ https://discord.gg/UBqjZnSKY4
 <br/>
 **NOTE:**
 <br/>
-Some skins don't have materials (all grey) which means it's unfinished. it's not a bug.
+Some skins don't have materials (all grey) which means it's unfinished. it's not a bug.<br/>
+Also if the app closes after you put your FrontendLoadout.sav path into it, that means it worked!
 
 
