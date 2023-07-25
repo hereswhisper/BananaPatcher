@@ -9,7 +9,7 @@ namespace BananaPatcher.Helpers
 {
     internal class HexEditor
     {
-        public static void FindAndReplace(string filePath, string searchString, string replaceString)
+        public static int FindAndReplace(string filePath, string searchString, string replaceString)
         {
             try
             {
@@ -31,6 +31,7 @@ namespace BananaPatcher.Helpers
                 File.WriteAllBytes(filePath, fileData);
 
                 Console.WriteLine("Find and replace completed successfully.");
+                return 0;
             }
             catch (Exception ex)
             {

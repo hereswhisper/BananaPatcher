@@ -101,13 +101,6 @@ namespace BananaPatcher.Content
 
             // Swap with Sea Wolf Jonesy
             __cosmeticsHex.Add(("DebugCID (Only works on v1.0.0)", "2F 47 61 6D 65 2F 41 74 68 65 6E 61 2F 49 74 65 6D 73 2F 43 6F 73 6D 65 74 69 63 73 2F 43 68 61 72 61 63 74 65 72 73 2F 44 65 62 75 67 43 49 44 2E 44 65 62 75 67 43 49 44 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00", true, ""));
-
-            //__cosmeticsHex.Add(("key3", "value3", true, ""));
-
-            //__cosmeticsHex.Add(("key3", "value3", true, ""));
-
-            //Console.WriteLine("[BananaPatcher] Successfully added all cosmetics!");
-            //Console.Clear();
             return 0;
         }
     }

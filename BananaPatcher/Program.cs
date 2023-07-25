@@ -11,40 +11,63 @@ namespace BananaPatcher
 {
     internal class Program
     {
-        static void Main(string[] args)
+        private static List<(int, string)> cosmeticPairs;
+
+        static async Task Main(string[] args)
         {
-            List<(int, string)> values = new List<(int, string)> ();
+            await Content.Cosmetics.addAllCosmeticHex();
 
-            Task.Run(async () => await Content.Cosmetics.addAllCosmeticHex()).Wait(); // whoopy
+            Console.WriteLine("BananaPatcher - v1.0.1 by @whisperends on discord");
 
-            Console.WriteLine("BananaPatcher - v1.0.0 by @whisperends on discord");
+            cosmeticPairs = GetCosmeticPairs();
 
+            if (cosmeticPairs.Count == 0)
+                return;
+
+            int selection = GetSelection();
+
+            if (selection <= 0)
+                return;
+
+            (int, string) selectedPair = GetSelectedPair(selection);
+
+            Conversion.alert(selectedPair.Item1, selectedPair.Item2);
+        }
+
+        private static List<(int, string)> GetCosmeticPairs()
+        {
+            List<(int, string)> values = new List<(int, string)>();
             int wow = 0;
 
-            foreach(var pair in Cosmetics.__cosmeticsHex)
+            foreach (var pair in Content.Cosmetics.__cosmeticsHex)
             {
                 wow++;
                 Console.WriteLine(wow + ". " + pair.Item1);
                 values.Add((wow, pair.Item1));
             }
 
+            return values;
+        }
+
+        private static int GetSelection()
+        {
             Console.Write("Selection: ");
-            string aaaaa = Console.ReadLine();
+            string input = Console.ReadLine();
 
-            if(aaaaa.Length <= 0) return;
+            return int.TryParse(input, out int selection) ? selection : -1;
+        }
 
-            foreach(var pair in values)
+        private static (int, string) GetSelectedPair(int selection)
+        {
+            foreach (var pair in cosmeticPairs)
             {
-                int anum = Int32.Parse(aaaaa);
-
-                Console.WriteLine(anum);
-
-                if(anum == pair.Item1)
+                if (pair.Item1 == selection)
                 {
-                    Conversion.alert(pair.Item1, pair.Item2); // wowie
-                    break;
+                    return pair;
                 }
             }
+
+            return (-1, string.Empty);
         }
     }
 }
